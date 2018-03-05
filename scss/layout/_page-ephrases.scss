@@ -1,0 +1,168 @@
+main#primary-ephrases {
+  .container-main {
+    @media (min-width: 768px) {
+      @include flex;
+    }
+    section#hero-ephrases {
+      position: relative;
+      margin: 0;
+      height: 420px;
+      width: 100%; 
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 2; 
+      }
+    }
+
+    .container-hero {
+      position: relative;
+      z-index: 3;
+      padding: 40px 0;
+      h2.ephrases-hero-heading {
+        color: #ffffff;
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+        @media (min-width: 425px) {
+          font-size: 32px;
+        }
+      }
+      p.ephrases-hero-desc {
+        color: #ffffff;
+        text-align: center;
+        width: 80%;
+        margin: 30px auto;
+        font-size: 16px;
+        @media (min-width: 425px) {
+          font-size: 21px; 
+        }
+        a {
+          color: #ffffff;
+          text-decoration: underline;
+        }
+      }
+      .category-box {
+        @media (min-width: 1024px) {
+          width: 80%;
+          margin: 0 auto;
+        }
+        ul.category-list {
+          width: 80%;
+          margin: 0 auto;
+          text-align: center;
+          @media (min-width: 1024px) {
+            padding-top: 10px;
+          }
+          li.category {
+            display: inline-block;
+            margin-bottom: 16px;
+            @media (min-width: 1024px) {
+              margin-bottom: 20px;
+              margin-left: 10px;
+            }
+            a {
+              color: #ffffff;
+              padding: 4px 8px;
+              background: #2994CB;
+              @include transition;
+              &:hover {
+                text-decoration: none;
+                background: #BDD2DB;
+                @include transition;
+              }
+              @media (min-width: 425px) {
+                font-size: 18px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  #category-sections {
+    width: 90%;
+    margin: 0 auto;
+    @media (min-width: 768px) {
+      width: 65%;
+      margin: 0 auto;
+    }
+    section.category-section {
+      margin: 0 auto 60px;
+      .category-section-container {
+        h2.category-heading {
+          color: #2994CB;
+          font-size: 24px;
+          margin: 10px 0 0;
+          border-bottom: 2px solid;
+        }
+        .wordbox {
+          background: #f9f7f4;
+          color: #333333;
+          padding: 10px;
+          margin: 5px 0;
+          p.word-en {
+            color: $black;
+            font-weight: 500;
+            font-size: 21px;
+            margin: 0 auto;
+          }
+          p.word-jp {
+            color: gray;
+            margin: 5px auto;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  aside.category-nav {
+    display: none;
+    position: relative;
+    @media (min-width: 768px) {
+      width: 30%;
+      display: block;
+      padding: 20px;
+      background: #2994CB;
+      color: #ffffff;
+      z-index: 0;
+    }
+    .category-box {
+      &.fixed {
+        position: fixed;
+        top: 20px;
+        right: 12%;
+        @media (min-width: 1024px) {
+          right: 16%;
+        }
+      }
+      ul.category-list {
+        li.category {
+          display: block;
+          margin-bottom: 10px; 
+          a {
+            color: #ffffff;
+            font-size: 18px;
+            text-decoration: underline; 
+          }
+
+        }
+      }
+    }
+  }
+
+  section#ask {
+    position: relative;
+    z-index: 2; 
+  }
+}
+
+

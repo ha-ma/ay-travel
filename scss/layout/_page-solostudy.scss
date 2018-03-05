@@ -1,0 +1,597 @@
+$pc:'min-width: 768px';
+
+//ボタン基本デザイン
+
+//ボタン基本デザイン
+.btn1{
+  display: table;
+  text-align: left;
+  margin: 20px 0 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: 1px solid $primary;
+  background-color: $primary;
+  color: $white;
+  &:hover{
+    opacity: 0.8;
+    text-decoration: none;
+  }
+  @media($pc){
+    margin: 30px 0 0;
+    padding: 5px 30px;
+  }
+}
+
+//hero画像部分
+.hero-solostudy{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 200px !important;
+  margin-top: 0 !important;
+  z-index: 0;
+  &::after {
+    position: absolute;
+    content: '';
+    background: rgba(0,0,0,.45);
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  @media($pc){
+    height: 400px !important;
+  }
+  .hero-solostudy-text{
+    position: absolute;
+    top: 25%;
+    right: 0;
+    left: 0;
+    font-size: 24px;
+    color: $white;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    @media($pc){
+      top: 25%;
+      right: 0;
+      left: 0;
+      font-size: 50px;
+    }
+  }
+}
+
+
+//study-abroad
+#study-abroad{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 650px !important;
+  margin-top: 0 !important;
+  padding: 50px 0;
+  @media($pc){
+    min-height: 850px !important;
+    padding: 80px 0;
+  }
+  .study-abroad-box{
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+    .study-abroad-title{
+      width: 100%;
+      padding: 20px 0;
+      background-color: $primary;
+      @media($pc){
+        padding: 40px 0;
+      }
+      img{
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        @media($pc) {
+          width: 40%;
+        }
+      }
+    }
+    .study-abroad-text{
+      width: 100%;
+      line-height: 1.5em;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: $white;
+      @media($pc){
+        @include flex(space-around);
+        line-height: 3em;
+        padding: 40px;
+      }
+      li{
+        font-size: 16px;
+        @media($pc) {
+          width: 45% !important;
+        }
+        img{
+          display: block;
+          text-align: center;
+          width: 100%;
+          margin: 0 auto;
+        }
+        &:first-child{
+          width: 100%;
+        }
+        &:last-child{
+          width: 85%;
+          @media($pc){
+            font-size: 18px;
+          }
+          .study-abroad-subtext{
+            line-height: 1.2em;
+            font-size: 21px;
+            @media($pc) {
+              line-height: 1.5em;
+              font-size: 24px;
+            }
+          }
+          hr{
+            text-align: left;
+            width: 45%;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            border: 0.5px $primary solid;
+            border-right: none;
+            border-left: none;
+            color: $primary;
+            @media($pc){
+              width: 30%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+//nations
+#nations{
+  width: 100%;
+  min-height: 650px !important;
+  margin-top: 0 !important;
+  padding: 50px 0;
+  background-color: $primary;
+  @media($pc){
+    padding: 100px 0;
+  }
+}
+.nations-box{
+  @media($pc){
+    @include flex(space-around);
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1400px;
+    li{
+      width: 30%;
+    }
+  }
+}
+.nations-box-list{
+  @include flex(space-around);
+  width: 90%;
+  margin: 0 auto;
+  li{
+    margin-bottom: 30px;
+    @media($pc){
+      margin: none !important;
+    }
+  }
+  .nations-img{
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+    @media($pc){
+      width: 100%;
+      height: 160px;
+    }
+  }
+  .nations-text{
+    width: 60%;
+    padding: 5px 15px 15px;
+    background-color: $white;
+    div{
+      font-size: 16px;
+    }
+    @media($pc){
+      width: 100%;
+      margin-top: -30px;
+      div{
+        width: 80%;
+        line-height: 1.5em;
+        height: 180px;
+        margin: 0 auto;
+        font-size: 16px;
+      }
+    }
+    .nations-subtext{
+      margin-top: 0px;
+      font-size: 24px;
+      @media($pc){
+        text-align: center;
+        margin: 0 auto;
+        font-size: 28px;
+      }
+    }
+    hr{
+      text-align: left;
+      width: 30%;
+      margin: -20px 0 10px 0;
+      border: 0.5px $primary solid;
+      border-right: none;
+      border-left: none;
+      color: $primary;
+      @media($pc){
+        margin: 20px auto 30px;
+      }
+    }
+  }
+}
+.nations-check{
+  position: relative;
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 5px;
+  background-color: $white;
+  @media($pc){
+    width: 35%;
+  }
+  img{
+    position: absolute;
+    display: block;
+    width: 100px;
+    top: -25px;
+    left: -20px;
+  }
+  .nations-check-inbox{
+    margin: 0 auto;
+    padding: 20px 0;
+    border: 1px solid $primary;
+    div{
+      width: 85%;
+      margin: 0 auto;
+      font-size: 16px;
+      line-height: 1.8;
+      a{
+        color: $primary;
+        text-decoration: underline;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+}
+
+
+//find-yourself
+#find-yourself{
+  padding: 50px 0;
+  @media($pc){
+    padding: 100px 0;
+  }
+  .find-yourself-backimg{
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    @media($pc){
+      width: 80%;
+      height: 600px;
+    }
+    img{
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 95%;
+      margin: auto;
+      @media($pc){
+        width: 40%;
+      }
+    }
+  }
+}
+
+
+//study-type
+#study-type{
+  padding: 50px 0;
+}
+.study-type-title{
+  text-align: center;
+  font-size: 24px;
+  @media($pc){
+    font-size: 28px;
+  }
+}
+.study-type-box{
+  .study-type-list{
+    position: relative;
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+    .study-type-img{
+      position: relative;
+      background-size: cover;
+      background-position: center;
+      width: 95%;
+      z-index: 0;
+      height: 450px;
+      @media ($pc) {
+        width: 50%;
+      }
+      &.stydy-type-img-langschool {
+        background-image: url(../img/solostudy/9.png);
+      }
+      &.stydy-type-img-localschool {
+        background-image: url(../img/solostudy/6.png);
+        margin-right: 0;
+        margin-left: auto;
+      }
+      &.stydy-type-img-workingholiday {
+        background-image: url(../img/solostudy/workingholiday.jpg);
+      }
+      
+    }
+    .study-type-text{
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      padding: 0 20px 25px;
+      font-size: 16px;
+      background-color: rgba($lightgray,0.8);
+      z-index: 1;
+      @media($pc){
+        top: 15%;
+        left: 40%;
+        width: 700px;
+        padding: 10px 50px 50px;
+        font-size: 18px;
+      }
+      h3{
+        margin-bottom: 10px;
+        font-size: 21px;
+        color: $primary;
+        @media($pc){
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .study-type-list2{
+    .study-type-img{
+      img{
+        margin-left: auto;
+      }
+    }
+    .study-type-text{
+      @media($pc){
+        right: 40%;
+        left: auto;
+        width: 600px;
+      }
+    }
+  }
+}
+.study-type-btn{
+  padding: 3px 10px;
+  background-color: rgba($lightgray,0);
+  color: $primary;
+  @media($pc){
+    padding: 5px 15px;
+  }
+}
+
+
+//school-introduction
+#school-introduction{
+  padding: 30px 0;
+  background-color: rgba($lightgray,0.8);
+  @media($pc){
+    margin-top: 50px;
+    padding: 60px 0;
+  }
+  hr{
+    width: 20%;
+    margin: 20px auto;
+    border: 0.5px $primary solid;
+    border-right: none;
+    border-left: none;
+    color: $primary;
+    @media($pc){
+      width: 15%;
+    }
+  }
+}
+.school-introduction-title{
+  position: relative;
+  text-align: center;
+  font-size: 24px;
+  color: $primary;
+  z-index: 2;
+  @media($pc){
+    font-size: 28px;
+  }
+}
+.school-introduction-box{
+  margin-bottom: 30px;
+  @media($pc){
+    margin-bottom: 60px;
+  }
+}
+.school-introduction-img{
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 250px;
+  padding: 30px 0;
+  z-index: 0;
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,.45);
+  }
+  @media($pc){
+    height: 500px;
+    padding: 60px 0;
+  }
+  .school-introduction-inbox{
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    @media($pc){
+      width: 70%;
+    }
+    img{
+      display: block;
+      width: 120px;
+      margin: 0 auto;
+      @media($pc){
+        width: 180px;
+      }
+    }
+    .school-introduction-subtitle1{
+      text-align: center;
+      font-size: 24px;
+      color: $white;
+      position: relative;
+      z-index: 2;
+      @media($pc){
+        text-align: center;
+        font-size: 40px;
+      }
+      .school-introduction-subtitle2{
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+.school-introduction-text{
+  width: 90%;
+  margin: -60px auto 0;
+  padding: 20px;
+  font-size: 16px;
+  background-color: $white;
+  position: relative;
+  z-index: 2;
+  @media($pc){
+    width: 70%;
+    max-width: 1100px;
+    margin: -150px auto 0;
+    padding: 30px 80px;
+    font-size: 21px;
+  }
+  span{
+    display: table;
+    margin: 0 0 30px;
+    padding: 5px 20px;
+    font-size: 18px;
+    border: 1px solid $primary;
+    background-color: $white;
+    color: $primary;
+    @media($pc){
+      font-size: 21px;
+    }
+  }
+}
+.ay-stuff{
+  @include flex(space-ground);
+  margin: 30px auto;
+  @media($pc){
+    width: 90%;
+    margin: 60px auto;
+  }
+}
+.ay-stuff-img{
+  width: 100%;
+  @media($pc){
+    width: 160px;
+  }
+  img{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    border: 1px solid $primary;
+    border-radius: 50%;
+    float: left;
+    @media($pc){
+      display: block;
+      width: 120px;
+      height: 120px;
+      float: none;
+    }
+  }
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin-left: 10px;
+    float: left;
+    @media($pc){
+      font-size: 18px;
+    }
+  }
+}
+.balloon {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-height: 13em;
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 15px 20px;
+  font-size: 16px;
+  border-radius: 10px;
+  background-color: rgba($lightgray,0.8);
+  color: $black;
+  @media($pc){
+    width: 70%;
+    vertical-align: text-bottom;
+    font-size: 18px;
+  }
+  p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.balloon:before{
+  display: none;
+  @media($pc){
+    position: absolute;
+    top: 25%;
+    left: -30px;
+    content: "";
+    margin-top: -15px;
+    border: 15px solid transparent;
+    border-right: 15px solid rgba($lightgray,0.8);
+    top: auto;
+    bottom: 5px;
+  }
+}

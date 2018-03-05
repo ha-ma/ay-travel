@@ -1,0 +1,184 @@
+section#studyprogram {
+  padding-top: 100px;
+  border-bottom: 1px solid grey;
+  position: relative;
+  z-index: 0;
+  background-image: url(../img/about-support.jpg);
+  background-size: cover;
+  background-position: center;
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: '';
+    background: rgba(255,255,255,.75);
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+  }
+  @media (min-width: 425px) {
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+
+  .container-studyprogram {
+    position: relative;
+    z-index: 2;
+    .studyprogram-heading {
+      padding: 20px 0;
+      position: relative;
+      h2 {
+        font-size: 28px;
+        margin: 0 auto;
+        color: #0071A5;
+        position: absolute;
+        display: inline-block;
+        top: -100px;
+        right: 5%;
+        font-size: 48px;
+        font-weight: 700;
+        z-index: 100;
+        line-height: 1.2;
+        opacity: 0.7;
+        text-align: right;
+        text-shadow: 0 0 4px rgba(0,0,0,.7);
+        @media (min-width: 425px) {
+          font-size: 66px;
+        }
+        @media (min-width: 768px) {
+          top: -120px;
+          font-size: 80px;
+
+        }
+        @media (min-width: 1024px) {
+          right: 0;
+          left: 0;
+          text-align: center;
+          
+        }
+      }
+      h4 {
+        font-size: 16px;
+        margin: 0 auto;
+        color: $secondary;
+        @media (min-width: 425px) {
+          font-size: 21px;
+        }
+      }
+    }
+
+    .studyprogram-slider {
+      position: relative;
+      max-width: 800px;
+      margin: 0 auto;
+      .feed-prev-btn,
+      .feed-next-btn {
+        position: absolute;
+        top: 100px;
+        @media (min-width: 600px) {
+          top: 150px;
+        }
+        .bx-prev,
+        .bx-next {
+          width: 100%;
+          display: block;
+          background: $secondary;
+          color: white;
+          text-align: center;
+          padding: 10px 15px;
+          z-index: 2000;
+          position: relative;
+          font-size: 21px;
+        }
+        
+      }
+      .feed-prev-btn {
+        left: 0;
+      }
+      .feed-next-btn {
+        right: 0;
+      }
+
+      .bx-wrapper {
+        max-width: 800px;
+        margin: 0 auto;
+        position: relative;
+        
+      }
+
+      ul.bxs-studyprogram {
+
+        li {
+          position: relative;
+          background-size: cover;
+          background-position: center;
+          width: 100%;
+          @media (min-width: 768px) {
+
+          }
+          &.studyprogram-slide-1 {
+          }
+          &.studyprogram-slide-2 {
+          }
+          &.studyprogram-slide-3 {
+          }
+          .flowbox-left {
+            margin-bottom: 20px;
+            
+          }
+          .flowbox-right {
+            height: 220px;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+            @media (min-width: 600px) {
+              height: 360px;
+            }
+            
+            &.flowbox-right-1 {
+              background-image: url(../img/overseas-opportunity.jpg);
+            }
+            &.flowbox-right-2 {
+              background-image: url(../img/solostudy/9.png);
+            }
+            &.flowbox-right-3 {
+              background-image: url(../img/jizen/enotebook.png);
+            }
+            &.flowbox-right-4 {
+              background-image: url(../img/ephrases.jpg);
+            }
+          }
+          h4.flowbox-left-heading-jp {
+            font-size: 16px;
+            margin: 0 auto;
+            color: $secondary;
+            @media (min-width: 425px) {
+              font-size: 21px;
+            }
+          }
+          h2.flowbox-left-heading-en {
+            font-size: 28px;
+            margin: 0 auto;
+            color: $secondary;
+            @media (min-width: 425px) {
+              font-size: 36px;
+            }
+          }
+          a {
+            border: none;
+            text-decoration: underline;
+            color: $secondary;
+            font-size: 16px;
+            &:hover {
+              opacity: .7;
+            }
+          }
+          
+        }
+      }
+    }
+  }
+}

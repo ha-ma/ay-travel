@@ -1,0 +1,29 @@
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea {
+  background-color: #fff;
+  color: $black;
+  width: 100%;
+}
+
+.wpcf7 input[type="submit"] {
+  border: 1px solid $primary;
+  background: transparent;
+  padding: 6px 12px;
+  color: $primary;
+  @include transition;
+  @media (min-width: 425px) {
+    font-size: 14px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 16px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 18px;
+  }
+  &:hover {
+    background: $primary;
+    color: $white;
+    @include transition;
+  }
+}

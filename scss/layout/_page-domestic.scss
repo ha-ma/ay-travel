@@ -1,0 +1,575 @@
+
+section#hero-domestic {
+  position: relative;
+  height: 400px;
+  z-index: 0;
+  &::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: rgba(0,0,0,.4);
+    z-index: 0;
+  }
+  .container-hero {
+    position: relative;
+    z-index: 1;
+    .hero-text {
+      text-align: center;
+      padding-top: 100px;
+      width: 80%;
+      margin: 0 auto;
+      @media (min-width: 768px) {
+        padding-top: 60px;
+      }
+      h2, h4 {
+        color: $white;
+        font-weight: 700;
+        background: none;
+      }
+      h2.hero-text-lg {
+        font-size: 30px;
+        font-weight: 700;
+        @media (min-width: 425px) {
+          font-size: 40px;
+        }
+        @media (min-width: 600px) {
+          font-size: 45px;
+        }
+        @media (min-width: 768px) {
+          font-size: 50px;
+        }
+        
+      }
+      h4.hero-text-sm {
+        font-size: 18px;
+        @media (min-width: 600px) {
+          font-size: 20px;
+        }
+      }
+
+    }
+  }
+
+}
+
+section#domestic-desc {
+  .container-domestic-desc {
+    position: relative;
+    @include flex;
+    @media (min-width: 1280px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+
+    h2.domestic-desc-heading {
+      position: absolute;
+      font-size: 34px;
+      color: $primary;
+      top: -16px;
+      margin: 0;
+      line-height: 1;
+      @media (min-width: 768px) {
+        font-size: 70px;
+        top: -30px;
+      }
+      @media (min-width: 1024px) {
+        font-size: 90px;
+      }
+    }
+    .domestic-desc-content {
+      width: 100%;
+      padding-top: 50px;
+      @media (min-width: 768px) {
+        width: 50%;
+        padding-top: 100px;
+      }
+      @media (min-width: 1024px) {
+        padding-top: 140px;
+      }
+      h4 {
+        font-size: 18px;
+        color: $primary;
+        @media (min-width: 768px) {
+          font-size: 21px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+      p {
+        color: $black;
+        @media (min-width: 768px) {
+          font-size: 14px;
+          font-weight: 500;
+        }
+      }
+      a.btn-outlined {
+        margin-top: 10px;
+        img {
+          display: inline-block;
+          width: 18px;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .domestic-desc-contact {
+      position: relative;
+      z-index: 0;
+      padding: 1%;
+      width: 95%;
+      margin: 30px auto 50px;
+      @media (min-width: 768px) {
+        width: 45%;
+        margin: 100px auto 50px;
+      }
+      @media (min-width: 1024px) {
+        width: 50%;
+      }
+      &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: auto;
+        background: rgba(0,0,0,.4);
+        z-index: 0;
+      }
+      .domestic-desc-contact-container {
+        position: relative;
+        z-index: 1;
+        margin: 10px auto;
+        width: 95%;
+        padding: 10px;
+        border: 2px solid $white;
+        h2 {
+          color: $white;
+          @media (min-width: 1024px) {
+            font-size: 26px;
+          }
+        }
+        p {
+          color: $white;
+          @media (min-width: 1024px) {
+            font-size: 16px;
+          }
+        }
+        a.btn-call {
+          color: $white;
+          font-size: 20px;
+          font-weight: 700;
+          display: block;
+          @media (min-width: 1024px) {
+            font-size: 30px;
+          }
+          img {
+            display: inline-block;
+            width: 16px;
+            margin-right: 4px;
+            @media (min-width: 1024px) {
+              width: 22px;
+            }
+          }
+        }
+        a.btn-contact {
+          margin-top: 20px;
+          background: $white;
+          color: $black;
+        }
+      }
+    }
+
+  }
+}
+
+section#domestic-plans {
+  position: relative;
+  background: linear-gradient( bottom, rgba(255,255,255,0), rgba(255,255,255,.9) ), url(../img/domestic/domestic-group-bg.jpg);
+  background: -webkit-linear-gradient( bottom, rgba(255,255,255,0), rgba(255,255,255,.9) ), url(../img/domestic/domestic-group-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  @include flex;
+  padding: 50px 0;
+
+  .container-domestic-plans {
+    width: 90%;
+    @media (min-width: 1280px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .domestic-plans-heading {
+      text-align: center;
+      padding-bottom: 30px;
+      border-bottom: 2px solid $primary;
+      h2.domestic-plans-heading-lg {
+        font-size: 36px;
+        color: $primary;
+        margin: 0;
+        line-height: 1;
+        @media (min-width: 768px) {
+          font-size: 70px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 90px;
+        }
+      }
+      h4.domestic-plans-heading-sm {
+        font-size: 18px;
+        color: $primary;
+        @media (min-width: 768px) {
+          font-size: 21px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 30px;
+        }
+      }
+
+
+    }
+    .domestic-plans-fbox {
+      .fbox {
+        @media (min-width: 768px) {
+          width: 47.5%;
+        }
+        @media (min-width: 1024px) {
+          width: 31%;
+        }
+
+        .fbox-container {
+          background: $white;
+          width: 100%;
+          margin: 20px auto;
+          
+
+          span.box-thumb {
+            width: 100%;
+            height: 240px;
+            background-size: cover;
+            background-position: center;
+            display: inline-block;
+            &.box-thumb-1 {
+              background-image: url(../img/domestic/domestic-meeting.jpg);
+            }
+            &.box-thumb-2 {
+              background-image: url(../img/domestic/domestic-ian.jpg);
+            }
+            &.box-thumb-3 {
+              background-image: url(../img/domestic/domestic-event.jpg);
+            }
+            &.box-thumb-4 {
+              background-image: url(../img/domestic/domestic-bustour.jpg);
+            }
+            &.box-thumb-5 {
+              background-image: url(../img/domestic/domestic-group.jpg);
+            }
+          }
+          .box-info {
+            padding: 20px 10px;
+            @media (min-width: 768px) {
+              min-height: 300px;
+            }
+            h4 {
+              position: relative;
+              text-align: center;
+              color: $primary;
+              font-size: 24px;
+              margin: 0 auto 40px;
+              &::after {
+                position: absolute;
+                content: '';
+                background: $primary;
+                height: 2px;
+                width: 60%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                bottom: -20px;
+              }
+            }
+            p {
+              font-size: 14px;
+              text-align: center;
+              @media (min-width: 768px) {
+                font-size: 16px;
+              }
+
+            }
+          }
+
+
+        }
+      }
+    }
+  }
+}
+
+section#domestic-plans {
+  .container-domestic-plans {
+    .domestic-plans-fbox {
+
+      .plan-box-6 {
+        .fbox-container-6 {
+          padding: 10px;
+          color: $white;
+          background-color: $primary;
+          min-height: 523px;
+          .fbox-wrapper-6 {
+            background: $primary;
+            border: 1px solid white;
+            margin: 0 auto;
+            min-height: 523px;
+            .box-heading-6 {
+              text-align: center;
+              position: relative;
+              background-color: $primary;
+              margin-top: 60px;
+              &::after {
+                position: absolute;
+                content: '';
+                background: $white;
+                height: 2px;
+                width: 60%;
+                right: 0;
+                left: 0;
+                margin: 0 auto;
+                bottom: -40px;
+              }
+              h2.plan-box-heading-lg {
+                margin: 0;
+                font-size: 36px;
+                @media (min-width: 768px) {
+                  font-size: 40px;
+                }
+              }
+              h4.plan-box-heading-sm {
+                font-size: 18px;
+                color: $white;
+                margin: 0;
+                @media (min-width: 768px) {
+                  font-size: 21px;
+                }
+              }
+            }
+            .plan-box-info-6 {
+              margin: 20px 0;
+              text-align: center;
+              a.btn-call {
+                color: $white;
+                font-size: 20px;
+                font-weight: 700;
+                display: block;
+                margin: 20px 0;
+                @media (min-width: 1024px) {
+                  font-size: 24px;
+                }
+                img {
+                  display: inline-block;
+                  width: 16px;
+                  margin-right: 4px;
+                  @media (min-width: 1024px) {
+                    width: 22px;
+                  }
+                }
+              }
+              a.btn-contact {
+                margin-top: 20px;
+                background: $white;
+                color: $primary;
+                margin: 20px 0;
+              }
+            }
+          }
+        }
+
+      }
+
+    }
+  }
+}
+
+section#domestic-flow {
+  background-color: $primary;
+  padding: 30px 0;
+  .container-domestic-flow {
+    width: 90%;
+    @media (min-width: 1280px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .domesticflow-heading {
+      color: $white;
+      padding: 0 0 10px;
+      h4.domesticflow-heading-en-sm {
+        margin: 0;
+        font-size: 18px;
+        @media (min-width: 768px) {
+          font-size: 21px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 24px;
+        }
+      }
+      h2.domesticflow-heading-en-lg {
+        font-size: 40px;
+        line-height: 1;
+        margin: 0;
+        @media (min-width: 768px) {
+          font-size: 50px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 70px;
+        }
+      }
+      h4.domesticflow-heading-jp {
+        margin: 0;
+        font-size: 16px;
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 21px;
+        }
+      }
+    }
+
+    .domesticflow-slider {
+      background: $white;
+      padding: 10px;
+      .flowbox-left {
+        @media (min-width: 768px) {
+          float: left;
+          width: 45%;
+          margin-left: 2.5%;
+        }
+        h2.flowbox-left-heading {
+          color: $secondary;
+          font-size: 21px;
+          @media (min-width: 768px) {
+            font-size: 30px;
+          }
+          &.flowbox-left-heading-2 {
+            @media (min-width: 768px) {
+              font-size: 26px;
+            }
+          }
+        }
+        .flowbox-left-content {
+          p {
+            font-size: 14px;
+            font-weight: 500;
+          }
+          a.btn-outlined {
+            margin-top: 10px;
+            img {
+              display: inline-block;
+              width: 18px;
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+      .flowbox-right {
+        position: relative;
+        padding: 10px;
+        margin-top: 20px;
+        z-index: 0;
+        color: $white;
+        @media (min-width: 768px) {
+          float: left;
+          width: 45%;
+          margin-left: 5%;
+        }
+        &.flowbox-right-1 {
+          background: linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-1.jpg);
+          background: -webkit-linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-1.jpg);
+          background-size: cover;
+          background-position: center;
+          
+        }
+        &.flowbox-right-2 {
+          background: linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-1.jpg);
+          background: -webkit-linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-2.jpg);
+          background-size: cover;
+          background-position: center;
+          
+        }
+        &.flowbox-right-3 {
+          background: linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-1.jpg);
+          background: -webkit-linear-gradient( bottom, rgba(0,0,0,.45), rgba(0,0,0,.45) ), url(../img/domestic/domestic-travelflow-point-3.jpg);
+          background-size: cover;
+          background-position: center;
+          
+        }
+        h2.flowbox-right-heading {
+          position: relative;
+          margin: 0;
+          font-size: 30px;
+          border-bottom: 1px solid;
+          z-index: 1;
+        }
+        .flowbox-right-content {
+          font-weight: 500;
+          padding: 20px 0;
+          font-size: 14px;
+          ul {
+            li {
+              a {
+                color: $white;
+                font-size: 14px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section#domestic-flow {
+  .container-domestic-flow {
+    .domesticflow-slider {
+      .bx-controls {
+        margin-top: 20px;
+        border-top: 1px solid $primary;
+        .bx-pager {
+          padding: 15px 0;
+          text-align: center;
+          .bx-pager-item {
+            display: inline-block;
+            a.bx-pager-link {
+              display: inline-block;
+              color: $primary;
+              font-size: 14px;
+              border: 1px solid $primary;
+              border-radius: 50%;
+              width: 40px;
+              padding: 10px;
+              margin: 0 10px;
+              font-weight: 700;
+              text-align: center;
+              &.active {
+                background-color: $primary;
+                color: $white;
+              }
+              &:hover {
+                text-decoration: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+

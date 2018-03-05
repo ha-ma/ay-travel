@@ -1,0 +1,68 @@
+section#media {
+  padding-top: 50px;
+  .media-container {
+    @include flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    .media-heading {
+      text-align: center;
+      color: $primary;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+    .media-movies {
+      width: 100%;
+      @include flex;
+      margin-bottom: 50px;
+      @media (min-width: 1024px) {
+        width: 38%;
+      }
+      .movies-movie {
+        width: 100%;
+        iframe {
+          width: 100% !important;
+        }
+        &.movie-1 {
+          @media (min-width: 768px) {
+            width: 100%;
+          }
+        }
+        &.movie-2,
+        &.movie-3 {
+          @media (min-width: 768px) {
+            width: 48%;
+          }
+        }
+      }
+    }
+    .media-fb {
+
+      width: 100%;
+      margin-bottom: 50px;
+      @media (min-width: 768px) {
+        width: 48%;
+      }
+      @media (min-width: 1024px) {
+        width: 30%;
+      }
+      iframe {
+        width: 100% !important;
+        max-width: 100%;
+        border: none;
+        overflow: hidden;
+      }
+    }
+
+    .media-instagram {
+      width: 100%;
+      margin-bottom: 50px;
+      @media (min-width: 768px) {
+        width: 48%;
+      }
+      @media (min-width: 1024px) {
+        width: 30%;
+      }
+    }
+  }
+}

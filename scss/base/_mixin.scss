@@ -1,0 +1,197 @@
+
+@import '../components/colors';
+
+@mixin beforebg($rgba: rgba(255,255,255,.4)) {
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $rgba;
+  }
+}
+
+
+
+@mixin transition {
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+
+
+@mixin transition-hover($duration: .25s, $timing: ease, $opacity: 0.8) {
+  -webkit-transition: all $duration $timing;
+  -moz-transition: all $duration $timing;
+  -ms-transition: all $duration $timing;
+  -o-transition: all $duration $timing;
+  transition: all $duration $timing;
+  &:hover {
+    -webkit-transition: all $duration $timing;
+    -moz-transition: all $duration $timing;
+    -ms-transition: all $duration $timing;
+    -o-transition: all $duration $timing;
+    transition: all $duration $timing;
+    opacity: $opacity;
+  }
+}
+
+
+
+@mixin flex( $justify: space-between ) {
+  -js-display: flex; /*--- IE8, 9---*/
+  display: -webkit-box;/*--- Androidブラウザ用 ---*/
+  display:- ms-flexbox;/*--- IE10 ---*/
+  display: -webkit-flex;/*--- safari（PC）用 ---*/
+  display: flex;
+  -webkit-box-align: stretch;/*--- Androidブラウザ用 ---*/
+  -ms-flex-align: stretch;/*--- IE10 ---*/
+  -webkit-align-items: stretch;/*--- safari（PC）用 ---*/
+  align-items: stretch;
+
+  -webkit-flex-wrap: wrap;/*--- safari（PC）用 ---*/
+  flex-wrap: wrap;
+
+  -webkit-box-pack: $justify;/*--- Androidブラウザ用 ---*/
+  -ms-flex-pack: $justify;/*--- IE10 ---*/
+  -webkit-justify-content: $justify;/*--- safari（PC）用 ---*/
+  justify-content: $justify;
+  margin: 0 auto;
+}
+
+
+@mixin order( $order: 0 ) {
+  -webkit-order: $order;
+  order: $order;
+}
+
+
+
+
+
+@mixin resp-width ( $width: 95% ) {
+  width: $width;
+  margin: 0 auto;
+}
+
+
+
+@mixin btn {
+  padding: .5em;
+  border-radius: .2em;
+  box-shadow: 0 .08em .08em rgba(0,0,0,.25);
+}
+
+
+@mixin gradient-bg ( $start: rgba(240,240,240,0.3), $end: rgba(24,24,24,0.9) ) {
+  background: $end;
+  background: -moz-linear-gradient(top, $start, $end); /* Firefox用 */  
+  background: -o-linear-gradient(top, $start, $end); /* Opera */
+  background: -webkit-gradient(linear,left top,left bottom,from($start),to($end)); /* Safari,Google Chrome用 */
+  background: linear-gradient(top,$start,$end);
+}
+
+
+@mixin allcenter( $w: 80%, $h: 200px ) {
+  margin: auto;
+  position: absolute;
+  width: $w;
+  height: $h;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==============================
+// Addable class
+// ==============================
+
+
+.bshadow-card {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+.btnshadow {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
+
+.fbox-1-2-3 {
+  @include flex;
+  .fbox {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 49.5%;
+    }
+    @media (min-width: 1024px) {
+      width: 31%;
+      margin: 0 1% 2%
+    }
+    
+    .fbox-container {
+      padding: 0;
+    }
+  }
+}
+
+
+.fbox-1-3 {
+  @include flex;
+  .fbox {
+    width: 100%;
+    @media (min-width: 768px) {
+      width: 31%;
+    }
+    .fbox-container {
+      padding: 0;
+    }
+  }
+}
+
+
+
+/* ==================================================================== */
+/* テーマ独自スタイル */
+/* -------------------------------------------------------------------- */
+
+
+@mixin font-cursive {
+  font-family: 'Dancing Script', cursive;
+
+}
+
+

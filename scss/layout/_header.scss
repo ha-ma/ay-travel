@@ -1,0 +1,307 @@
+
+/* ==================================================================== */
+/* 多階層メニュー                       */
+/* -------------------------------------------------------------------- */
+
+// 基本スタイル
+.dropmenu {
+  *zoom: 1;
+  list-style-type: none;
+  margin: 36px auto 0;
+  padding: 0;
+  @media (min-width: 1280px) {
+    margin: 52px auto 0;
+  }
+  &::before, &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+  li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+    padding: 0;
+    text-align: center;
+
+    &:hover > a {
+      color: $secondary;
+      border: 1px solid $secondary;
+    }
+    a {
+      display: block;
+      margin: 0;
+      padding: 8px 10px;
+      background: $white;
+      color: $primary;
+      font-size: 1rem;
+      line-height: 1;
+      text-decoration: none;
+      border: 1px solid $white;
+      @media (min-width: 1280px) {
+        font-size: 1.4rem;
+      }
+      &:hover {
+        color: $secondary;
+        border: 1px solid $secondary;
+        background: $white;
+      }
+    }
+    ul {
+      list-style: none;
+      position: absolute;
+      z-index: 9999;
+      top: 100%;
+      left: 0;
+      margin: 0;
+      padding: 0;
+      li {
+        width: 100%;
+        a {
+          padding: 13px 15px;
+          border: 1px solid $primary;
+          border-top: 1px solid $secondary;
+          background: $primary;
+          color: $white;
+          text-align: left;
+        }
+      }
+    }
+  }
+}
+
+// フェードイン
+
+#fade-in li {
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    transition: 0s;
+    li {
+      a {
+        visibility: hidden;
+        opacity: 0;
+        transition: .5s;
+      }
+    }
+  }
+  &:hover ul {
+    visibility: visible;
+    opacity: 1;
+    li {
+      a {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ==================================================================== */
+/* メニュー                   */
+/* -------------------------------------------------------------------- */
+header {
+  border-top: 10px solid $primary;
+  width: 100%;
+  .container-header {
+    @media (min-width: 1280px) {
+      width: 1200px;
+      margin: 0 auto;
+    }
+    h1#site-title {
+      float: left;
+      display: inline-block;
+      margin: 0.67em 0;
+      a#logo-link {
+        &:hover {
+          opacity: .8;
+        }
+        img {
+          width: 100%;
+          max-width: 160px;
+          @media (min-width: 450px) {
+            max-width: 180px;
+          }
+          @media (min-width: 600px) {
+            max-width: 200px;
+          }
+          @media (min-width: 1024px) {
+            max-width: 180px;
+          }
+          @media (min-width: 1280px) {
+            max-width: 240px;
+          }
+
+        }
+      }
+    }
+
+    nav#desktop-header {
+      display: none;
+      @media (min-width: 1024px) {
+        display: block;
+        padding-bottom: 10px;
+      }
+      ul#fade-in {
+        margin: 0;
+        text-align: center;
+        li {
+          float: none;
+          display: inline-block;
+          width: 19%;
+          vertical-align: top;
+          margin: 0;
+          border-left: 1px dotted $primary;
+          &:last-child {
+            border-right: 1px dotted $primary;
+          }
+          &:hover {
+            ul {
+              visibility: visible;
+              opacity: 1;
+            }
+          }
+
+          a {
+            font-size: 12px;
+            font-weight: 700;
+            text-align: center;
+            border: none;
+            &:hover {
+              color: $primary;
+              border: none;
+              background: none;
+              opacity: .6;
+            }
+            @media (min-width: 1280px) {
+              font-size: 18px;
+            }
+            span.desktop-menu-word {
+              display: inline-block;
+              width: 100%;
+              margin: 0 auto;
+              padding-bottom: 8px;
+            }
+            img.desktop-menu-img {
+              display: inline-block;
+              width: 30px;
+              margin: 0 auto;
+              &.desktop-menu-img-overseas {
+                width: 25px;
+              }
+              &.desktop-menu-img-domestic {
+                width: 26px;
+              }
+              &.desktop-menu-img-about {
+                width: 18px;
+              }
+              &.desktop-menu-img-solo {
+                width: 23px;
+              }
+            }
+          }
+
+          ul.desktop-sub-ul { 
+            li.desktop-menu-sub-link {
+              width: 100%;
+              a {
+                @include transition;
+                &:hover {
+                  @include transition;
+                  background: #BDD2DB;
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    ul#menu-sns {
+      display: none;
+      float: right;
+      margin: 1.8em 0;
+      @media (min-width: 375px) {
+        display: block;
+      }
+      li {
+        display: inline-block;
+        margin-right: 8px;
+        a {
+          img {
+            width: 30px;
+            vertical-align: middle;
+            opacity: 1;
+            @include transition;
+            &:hover {
+              opacity: 0.7;
+              @include transition;
+            }
+            &.aytravelstudy-btn {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+
+  }
+
+}
+
+
+
+
+/* ==================================================================== */
+/* pushy関係                   */
+/* -------------------------------------------------------------------- */
+
+#menu-btn {
+  float: right;
+  color: $white;
+  margin: 1.4em 1em;
+  font-size: 1.4rem;
+  @media (min-width: 600px) {
+    font-size: 1.6rem;
+  }
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}
+
+
+nav.pushy {
+  background: $primary;
+  a {
+    @include transition;
+    font-size: 14px;
+    color: $white;
+    &:hover {
+      background: $white;
+      color: $primary;
+      @include transition;
+    }
+  }
+
+  ul {
+    li {
+      a {
+        font-size: 14px;
+        color: $white;
+      }
+    }
+  }
+}
+
+
+
+
+
+

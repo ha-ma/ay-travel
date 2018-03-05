@@ -1,0 +1,57 @@
+.main-about {
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+section#travelterms-heading {
+  background: $primary;
+  color: $white;
+  padding: 30px 0;
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}
+
+section#travelterms-abstract {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}
+
+
+section#travelterms-terms {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+    .terms-box {
+      margin-bottom: 40px;
+      img {
+        width: 100%;
+        max-width: 700px;
+      }
+    }
+  }
+}
+
+
+section#travelterms-contact {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}

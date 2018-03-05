@@ -1,0 +1,168 @@
+
+
+.main-about {
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+section#hero {
+  .container-hero {
+    .hero-text {
+      h2 {
+        font-family: "Noto Sans Japanese", Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+
+
+section#content-mission {
+  .container {
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}
+
+section#content-business {
+  .container {
+    @include flex;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+    h2.ay-heading {
+      width: 100%;
+    }
+    .content-box {
+      width: 100%;
+      background: $bluegray;
+      margin: 0 0 20px;
+
+      @media (min-width: 768px) {
+        width: 49%;
+      }
+      
+      h3 {
+        background: $primary;
+        color: $white;
+        padding: 6px 8px;
+        margin: 0;
+        &::after {
+          border-bottom: none;
+        }
+      }
+      img {
+        display: inline-block;
+        width: 100%;
+        padding:8px;
+      }
+      p {
+        margin: 0;
+        padding: 8px 4px 16px;
+        @media (min-width: 600px) {
+          font-size: 14px;
+        }
+        @media (min-width: 1024px) {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+section#content-companyinfo {
+  .container {
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}
+
+section#content-partners {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+    .partners-heading {
+      h2 {
+        span.note {
+          font-size: 12px;
+        }
+      }
+    }
+    .partners-list {
+      ul {
+        li {
+          margin: 0 0 30px;
+          color: $primary;
+          display: block;
+          span {
+            width: 100%;
+            display: block;
+            border-bottom: 1px dotted $primary;
+          }
+          img {
+            width: 100px;
+            padding-top: 5px;
+            display: block;
+            margin: 0 auto;
+            @media (min-width: 425px) {
+              width: 120px;
+            }
+            @media (min-width: 768px) {
+              width: 160px;
+            }
+            @media (min-width: 1024px) {
+              width: 200px;
+            }
+            @media (min-width: 1440px) {
+              width: 240px;
+            }
+          }
+          a {
+            display: block;
+            color: $primary;
+            width: 100%;
+            @media (min-width: 425px) {
+              font-size: 16px;
+            }
+            @media (min-width: 1024px) {
+              font-size: 21px;
+            }
+            @media (min-width: 1440px) {
+              font-size: 24px;
+            }
+          }
+          a.banner-link {
+            border: none;
+            img {
+              width: 100px;
+              padding-top: 5px;
+              display: block;
+              margin: 0 auto;
+              @media (min-width: 425px) {
+                width: 120px;
+              }
+              @media (min-width: 768px) {
+                width: 160px;
+              }
+              @media (min-width: 1024px) {
+                width: 200px;
+              }
+              @media (min-width: 1440px) {
+                width: 240px;
+              }
+            }
+          }
+          
+        }
+      }
+    }
+  }
+
+}

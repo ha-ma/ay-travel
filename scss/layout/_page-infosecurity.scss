@@ -1,0 +1,74 @@
+.main-about {
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+section#hero {
+  .container-hero {
+    .hero-text {
+      h2 {
+        font-family: "Noto Sans Japanese", Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+
+}
+
+
+section#infosecurity-heading {
+  background: $primary;
+  color: $white;
+  padding: 30px 0;
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}
+
+section#infosecurity-abstract {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+    ul {
+      list-style: disc;
+      list-style-position: inside;
+      li {
+        list-style: disc;
+        list-style-position: inside;
+      }
+    }
+  }
+}
+
+
+section#infosecurity-pi {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+    .pi-sign {
+      text-align: right;
+    }
+  }
+}
+
+
+section#infosecurity-contact {
+  .container {
+    width: 97.5%;
+    margin: 0 auto;
+    @media (min-width: 1280px) {
+      max-width: 1200px;
+    }
+  }
+}

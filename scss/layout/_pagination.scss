@@ -1,0 +1,19 @@
+section.pagination {
+  width: 100%;
+  margin: 0 auto 30px;
+  text-align: center;
+  .wp-pagenavi {
+    span.pages {
+      font-size: 16px;
+    }
+    span {
+      color: $black;
+      font-size: 16px;
+    }
+    a {
+      font-size: 16px;
+      color: $primary;
+    }
+  }
+  
+}

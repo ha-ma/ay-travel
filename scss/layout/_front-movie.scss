@@ -1,0 +1,49 @@
+section#movies {
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 100px;
+  .container-movies {
+    position: relative;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid #2994CB;
+    height: 300px;
+    @media (min-width: 1024px) {
+      height: 600px;
+    }
+    iframe {
+      position: absolute;
+      width: 85%;
+      margin: 0 auto;
+      top: -20px;
+      right: 0;
+      left: 0;
+      @media (min-width: 425px) {
+        height: 220px;
+      }
+      @media (min-width: 1024px) {
+        height: 500px;
+        width: 75%;
+      }
+    }
+    a {
+      display: block;
+      width: 80%;
+      margin: 0 auto;
+      position: absolute;
+      right: 0;
+      left: 0;
+      bottom: -100px;
+      color: #2994CB;
+      font-size: 26px;
+      font-weight: 500;
+      @media (min-width: 768px) {
+        bottom: 20px;
+      }
+      @media (min-width: 1024px) {
+        bottom: 40px;
+      }
+    }
+  }
+}

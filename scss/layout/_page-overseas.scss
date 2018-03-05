@@ -1,0 +1,502 @@
+.main-about {
+  section {
+    margin-bottom: 60px;
+  }
+}
+
+main.page-overseas {
+
+  section#hero.hero-overseas {
+    position: relative;
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: auto;
+      background: rgba(0,0,0,.4);
+      z-index: 2;
+    }
+    .container-hero {
+      position: relative;
+      z-index: 4;
+      .hero-text {
+        h2 {
+          font-family: "Noto Sans Japanese", Avenir, "Open Sans", "Helvetica Neue", Helvetica, Arial, Verdana, Roboto, "游ゴシック", "Yu Gothic", "游ゴシック体", "YuGothic", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "Meiryo UI", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+          font-weight: 700;
+        }
+      }
+    }
+
+  }
+
+  section#overseas-reason {
+    background: linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url(../img/overseas-bg.jpg);
+    background: -webkit-linear-gradient(bottom, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.9)), url(../img/overseas-bg.jpg);
+    background-size: cover;
+    background-position: center;
+
+    .container {
+      width: 97.5%;
+      margin: 0 auto;
+      padding: 30px 0 60px;
+      @include flex;
+      @media (min-width: 1280px) {
+        width: 1200px;
+      }
+      .heading-reason {
+        width: 100%;
+        h2 {
+          position: relative;
+          width: 300px;
+          margin: 30px 0 15px;
+          text-align: left;
+          z-index: 2;
+          font-size: 21px;
+
+          @media (min-width: 600px) {
+            width: 400px;
+            font-size: 26px;
+            text-align: center;
+            margin: 30px auto 15px;
+          }
+          @media (min-width: 1024px) {
+            width: 500px;
+            font-size: 32px;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 20%;
+            background: $primary;
+            bottom: 10%;
+            left: 0;
+            z-index: -1;
+          }
+        }
+      }
+      .box-reasons {
+        .fbox {
+          .fbox-container {
+            background: #ffffff;
+            width: 100%;
+            margin: 20px auto;
+            @media (min-width: 1024px) {
+              min-height: 700px;
+            }
+            span.box-thumb {
+              width: 100%;
+              height: 240px;
+              background-size: cover;
+              background-position: center;
+              display: inline-block;
+              &.box-thumb-1 {
+                background-image: url(../img/overseas-necessity.jpg);
+              }
+              &.box-thumb-2 {
+                background-image: url(../img/overseas-opportunity.jpg);
+              }
+              &.box-thumb-3 {
+                background-image: url(../img/overseas-office.jpg);
+              }
+
+            }
+            .box-info {
+              padding: 20px 10px;
+              @media (min-width: 768px) {
+                min-height: 300px;
+              }
+              h4 {
+                position: relative;
+                text-align: center;
+                color: #2994CB;
+                background: none;
+                font-size: 24px;
+                margin: 0 auto 40px;
+                &::after {
+                  position: absolute;
+                  content: '';
+                  background: #2994CB;
+                  height: 2px;
+                  width: 60%;
+                  right: 0;
+                  left: 0;
+                  margin: 0 auto;
+                  bottom: -20px;
+                }
+              }
+              p {
+                font-size: 14px;
+                text-align: center;
+                @media (min-width: 768px) {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section#overseas-solution {
+    background: $primary;
+    color: $white;
+    .container {
+      width: 97.5%;
+      margin: 0 auto;
+      padding: 30px 0 60px;
+      @include flex;
+      @media (min-width: 1280px) {
+        width: 1200px;
+      }
+      .heading-solution {
+        width: 100%;
+        h2 {
+          position: relative;
+          width: 300px;
+          margin: 30px 0 15px;
+          text-align: left;
+          z-index: 2;
+          font-size: 21px;
+          color: $white;
+
+          @media (min-width: 600px) {
+            width: 400px;
+            font-size: 26px;
+            text-align: center;
+            margin: 30px auto 15px;
+          }
+          @media (min-width: 1024px) {
+            width: 500px;
+            font-size: 32px;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 20%;
+            background: $secondary;
+            bottom: 10%;
+            left: 0;
+            z-index: -1;
+          }
+        }
+      }
+      .box-solutions {
+        .fbox {
+          .fbox-container {
+            background: #ffffff;
+            width: 100%;
+            margin: 20px auto;
+            @media (min-width: 1024px) {
+              min-height: 700px;
+            }
+            span.box-thumb {
+              width: 100%;
+              height: 240px;
+              background-size: cover;
+              background-position: center;
+              display: inline-block;
+              &.box-thumb-1 {
+                background-image: url(../img/overseas-suggestion.jpg);
+              }
+              &.box-thumb-2 {
+                background-image: url(../img/overseas-program.jpg);
+              }
+              &.box-thumb-3 {
+                background-image: url(../img/overseas-meeting.jpg);
+              }
+
+            }
+            .box-info {
+              padding: 20px 10px;
+              @media (min-width: 768px) {
+                min-height: 300px;
+              }
+              h4 {
+                position: relative;
+                text-align: center;
+                color: #2994CB;
+                background: none;
+                font-size: 24px;
+                margin: 0 auto 40px;
+                &::after {
+                  position: absolute;
+                  content: '';
+                  background: #2994CB;
+                  height: 2px;
+                  width: 60%;
+                  right: 0;
+                  left: 0;
+                  margin: 0 auto;
+                  bottom: -20px;
+                }
+              }
+              p {
+                font-size: 14px;
+                text-align: center;
+                color: $black;
+                @media (min-width: 768px) {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section#overseas-videos {
+    .container {
+      width: 97.5%;
+      margin: 0 auto;
+      padding: 30px 0 60px;
+      @include flex;
+      @media (min-width: 1280px) {
+        width: 1200px;
+      }
+      .heading-videos {
+        width: 100%;
+        h2 {
+          @media (min-width: 425px) {
+            font-size: 21px;
+          }
+          @media (min-width: 768px) {
+            font-size: 18px;
+          }
+          @media (min-width: 1024px) {
+            font-size: 21px;
+          }
+          position: relative;
+          padding: 1em;
+          background-color: #f6f6f6;
+          margin-bottom: 1em;
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            content: '';
+            width: 0;
+            border-width: 0 16px 16px 0;
+            border-style: solid;
+            border-color: #fff #fff #ddd #ddd;
+            box-shadow: -1px 1px 2px rgba(0, 0, 0, .1);
+          }
+        }
+        p {
+          color: $black;
+          @media (min-width: 600px) {
+            text-align: center;
+            width: 80%;
+            margin: 0 auto;
+          }
+        }
+      }
+      .box-video {
+        width: 100%;
+        margin: 0 0 30px;
+        @media (min-width: 768px) {
+          width: 45%;
+          margin: 0;
+        }
+        @media (min-width: 1024px) {
+          width: 20%;
+          margin: 0;
+        }
+        h3 {
+          @media (min-width: 1024px) {
+            font-size: 18px;
+          }
+          @media (min-width: 1440px) {
+            font-size: 21px;
+          }
+        }
+        iframe {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  section#overseas-depflow {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      background: rgba(255,255,255,.55);
+      width: 100%;
+      height: 100%;
+      margin: auto;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+    }
+    color: $white;
+    .container {
+      width: 97.5%;
+      margin: 0 auto;
+      padding: 30px 0 60px;
+      @include flex;
+      @media (min-width: 1280px) {
+        width: 1200px;
+      }
+      .overseas-depflow-heading {
+        @media (min-width: 768px) {
+          margin: 0 auto;
+        }
+        h2 {
+          position: relative;
+          width: 300px;
+          margin: 30px 0 15px;
+          text-align: left;
+          z-index: 2;
+          font-size: 21px;
+          color: $black;
+
+          @media (min-width: 600px) {
+            width: 400px;
+            font-size: 26px;
+            text-align: center;
+            margin: 30px auto 15px;
+          }
+          @media (min-width: 1024px) {
+            width: 500px;
+            font-size: 32px;
+          }
+          &::before {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 20%;
+            background: $primary;
+            bottom: 10%;
+            left: 0;
+            z-index: -1;
+          }
+        }
+        p {
+          color: $black;
+          @media (min-width: 600px) {
+            text-align: center;
+            width: 65%;
+            margin: 20px auto;
+            position: relative;
+          }
+          a {
+            color: $black;
+            text-decoration: underline;
+          }
+        }
+
+      }
+      .overseas-depflow-content {
+        @media (min-width: 768px) {
+          margin: 0 auto;
+        }
+        ul {
+          li {
+            .cbp_tmlabel {
+              p {
+                a {
+                  color: $white;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section#overseas-closing {
+    background: $primary;
+    color: $white;
+    .container {
+      width: 97.5%;
+      margin: 0 auto;
+      padding: 30px 0 60px;
+      @media (min-width: 1280px) {
+        width: 1200px;
+      }
+
+
+      .heading-closing {
+
+        h2 {
+          position: relative;
+          margin: 30px 0 15px;
+          text-align: left;
+          z-index: 2;
+          font-size: 18px;
+          color: $white;
+          &.heading-closing-top {
+            width: 300px;
+            @media (min-width: 600px) {
+              width: 400px;
+              font-size: 22px;
+              text-align: center;
+              margin: 30px auto 15px;
+            }
+            @media (min-width: 1024px) {
+              width: 500px;
+              font-size: 26px;
+            }
+            &::before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 20%;
+              background: $secondary;
+              bottom: 10%;
+              left: 0;
+              z-index: -1;
+            }
+          }
+          &.heading-closing-bottom {
+            width: 160px;
+            @media (min-width: 600px) {
+              width: 220px;
+              font-size: 22px;
+              text-align: center;
+              margin: 30px auto 15px;
+            }
+            @media (min-width: 1024px) {
+              width: 240px;
+              font-size: 26px;
+            }
+            &::before {
+              position: absolute;
+              content: "";
+              width: 100%;
+              height: 20%;
+              background: $secondary;
+              bottom: 10%;
+              left: 0;
+              z-index: -1;
+            }
+          }
+        }
+        p {
+          color: $white;
+          @media (min-width: 600px) {
+            text-align: center;
+            width: 65%;
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}

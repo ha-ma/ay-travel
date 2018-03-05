@@ -1,0 +1,61 @@
+section#snsbar {
+  margin-bottom: 20px;
+  .snsbar-container {
+    position: relative;
+    .snsbar-body {
+      position: absolute;
+      padding-top: 5%;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      color: $white;
+      text-align: center;
+      background-color: rgba(0,0,0,0.4);
+      @include transition;
+      z-index: 2;
+      &:hover {
+        opacity: 1;
+      }
+      h2.snsbar-body-heading {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        display: none;
+        @media (min-width: 768px) {
+          display: block;
+        }
+
+
+
+      }
+      li.snsbar-body-item {
+        display: inline-block;
+        margin: 0 10px;
+        a {
+          display: block;
+          padding: 6px 20px 7px;
+          background: transparent;
+          border: 1px solid #fff;
+          text-align: center;
+          color: #fff;
+          font-size: 18px;
+          line-height: 1;
+          letter-spacing: .1em;
+          position: relative;
+          @include transition;
+          &:hover {
+            @include transition;
+          }
+        }
+      }
+
+    }
+    .snsbar-pic {
+      position: relative;
+      z-index: 1;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
