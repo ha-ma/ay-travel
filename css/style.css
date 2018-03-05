@@ -5052,7 +5052,7 @@ main#primary-ephrases section#ask {
   .btn1:hover {
     opacity: 0.8;
     text-decoration: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .btn1 {
       margin: 30px 0 0;
       padding: 5px 30px; } }
@@ -5075,7 +5075,7 @@ main#primary-ephrases section#ask {
     bottom: 0;
     left: 0;
     z-index: 1; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .hero-solostudy {
       height: 400px !important; } }
   .hero-solostudy .hero-solostudy-text {
@@ -5088,7 +5088,7 @@ main#primary-ephrases section#ask {
     width: 100%;
     text-align: center;
     z-index: 2; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .hero-solostudy .hero-solostudy-text {
         top: 25%;
         right: 0;
@@ -5103,7 +5103,7 @@ main#primary-ephrases section#ask {
   min-height: 650px !important;
   margin-top: 0 !important;
   padding: 50px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     #study-abroad {
       min-height: 850px !important;
       padding: 80px 0; } }
@@ -5115,14 +5115,14 @@ main#primary-ephrases section#ask {
       width: 100%;
       padding: 20px 0;
       background-color: #2994CB; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         #study-abroad .study-abroad-box .study-abroad-title {
           padding: 40px 0; } }
       #study-abroad .study-abroad-box .study-abroad-title img {
         display: block;
         width: 80%;
         margin: 0 auto; }
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           #study-abroad .study-abroad-box .study-abroad-title img {
             width: 40%; } }
     #study-abroad .study-abroad-box .study-abroad-text {
@@ -5131,7 +5131,7 @@ main#primary-ephrases section#ask {
       margin: 0 auto;
       padding: 20px;
       background-color: #ffffff; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         #study-abroad .study-abroad-box .study-abroad-text {
           -js-display: flex;
           /*--- IE8, 9---*/
@@ -5164,7 +5164,7 @@ main#primary-ephrases section#ask {
           padding: 40px; } }
       #study-abroad .study-abroad-box .study-abroad-text li {
         font-size: 16px; }
-        @media (min-width: 768px) {
+        @media (min-width: 1024px) {
           #study-abroad .study-abroad-box .study-abroad-text li {
             width: 45% !important; } }
         #study-abroad .study-abroad-box .study-abroad-text li img {
@@ -5175,14 +5175,14 @@ main#primary-ephrases section#ask {
         #study-abroad .study-abroad-box .study-abroad-text li:first-child {
           width: 100%; }
         #study-abroad .study-abroad-box .study-abroad-text li:last-child {
-          width: 85%; }
-          @media (min-width: 768px) {
+          width: 100%; }
+          @media (min-width: 1024px) {
             #study-abroad .study-abroad-box .study-abroad-text li:last-child {
               font-size: 18px; } }
           #study-abroad .study-abroad-box .study-abroad-text li:last-child .study-abroad-subtext {
             line-height: 1.2em;
-            font-size: 21px; }
-            @media (min-width: 768px) {
+            font-size: 18px; }
+            @media (min-width: 1024px) {
               #study-abroad .study-abroad-box .study-abroad-text li:last-child .study-abroad-subtext {
                 line-height: 1.5em;
                 font-size: 24px; } }
@@ -5195,7 +5195,7 @@ main#primary-ephrases section#ask {
             border-right: none;
             border-left: none;
             color: #2994CB; }
-            @media (min-width: 768px) {
+            @media (min-width: 1024px) {
               #study-abroad .study-abroad-box .study-abroad-text li:last-child hr {
                 width: 30%; } }
 
@@ -5205,11 +5205,11 @@ main#primary-ephrases section#ask {
   margin-top: 0 !important;
   padding: 50px 0;
   background-color: #2994CB; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     #nations {
       padding: 100px 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .nations-box {
     -js-display: flex;
     /*--- IE8, 9---*/
@@ -5276,14 +5276,14 @@ main#primary-ephrases section#ask {
   margin: 0 auto; }
   .nations-box-list li {
     margin-bottom: 30px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .nations-box-list li {
         margin: none !important; } }
   .nations-box-list .nations-img {
     background-size: cover;
     background-position: center;
     width: 40%; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .nations-box-list .nations-img {
         width: 100%;
         height: 160px; } }
@@ -5293,10 +5293,11 @@ main#primary-ephrases section#ask {
     background-color: #ffffff; }
     .nations-box-list .nations-text div {
       font-size: 16px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .nations-box-list .nations-text {
         width: 100%;
-        margin-top: -30px; }
+        margin-top: -30px;
+        padding-bottom: 40px; }
         .nations-box-list .nations-text div {
           width: 80%;
           line-height: 1.5em;
@@ -5306,7 +5307,7 @@ main#primary-ephrases section#ask {
     .nations-box-list .nations-text .nations-subtext {
       margin-top: 0px;
       font-size: 24px; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .nations-box-list .nations-text .nations-subtext {
           text-align: center;
           margin: 0 auto;
@@ -5319,7 +5320,7 @@ main#primary-ephrases section#ask {
       border-right: none;
       border-left: none;
       color: #2994CB; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .nations-box-list .nations-text hr {
           margin: 20px auto 30px; } }
 
@@ -5329,7 +5330,7 @@ main#primary-ephrases section#ask {
   margin: 20px auto 0;
   padding: 5px;
   background-color: #ffffff; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .nations-check {
       width: 35%; } }
   .nations-check img {
@@ -5355,7 +5356,7 @@ main#primary-ephrases section#ask {
 
 #find-yourself {
   padding: 50px 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     #find-yourself {
       padding: 100px 0; } }
   #find-yourself .find-yourself-backimg {
@@ -5366,7 +5367,7 @@ main#primary-ephrases section#ask {
     width: 100%;
     height: 300px;
     margin: 0 auto; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       #find-yourself .find-yourself-backimg {
         width: 80%;
         height: 600px; } }
@@ -5379,7 +5380,7 @@ main#primary-ephrases section#ask {
       bottom: 0;
       width: 95%;
       margin: auto; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         #find-yourself .find-yourself-backimg img {
           width: 40%; } }
 
@@ -5389,7 +5390,7 @@ main#primary-ephrases section#ask {
 .study-type-title {
   text-align: center;
   font-size: 24px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .study-type-title {
       font-size: 28px; } }
 
@@ -5405,7 +5406,7 @@ main#primary-ephrases section#ask {
     width: 95%;
     z-index: 0;
     height: 450px; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .study-type-box .study-type-list .study-type-img {
         width: 50%; } }
     .study-type-box .study-type-list .study-type-img.stydy-type-img-langschool {
@@ -5424,7 +5425,7 @@ main#primary-ephrases section#ask {
     font-size: 16px;
     background-color: rgba(242, 242, 234, 0.8);
     z-index: 1; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .study-type-box .study-type-list .study-type-text {
         top: 15%;
         left: 40%;
@@ -5435,12 +5436,12 @@ main#primary-ephrases section#ask {
       margin-bottom: 10px;
       font-size: 21px;
       color: #2994CB; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .study-type-box .study-type-list .study-type-text h3 {
           font-size: 24px; } }
 .study-type-box .study-type-list2 .study-type-img img {
   margin-left: auto; }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .study-type-box .study-type-list2 .study-type-text {
     right: 40%;
     left: auto;
@@ -5450,14 +5451,14 @@ main#primary-ephrases section#ask {
   padding: 3px 10px;
   background-color: rgba(242, 242, 234, 0);
   color: #2994CB; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .study-type-btn {
       padding: 5px 15px; } }
 
 #school-introduction {
   padding: 30px 0;
   background-color: rgba(242, 242, 234, 0.8); }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     #school-introduction {
       margin-top: 50px;
       padding: 60px 0; } }
@@ -5468,7 +5469,7 @@ main#primary-ephrases section#ask {
     border-right: none;
     border-left: none;
     color: #2994CB; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       #school-introduction hr {
         width: 15%; } }
 
@@ -5478,13 +5479,13 @@ main#primary-ephrases section#ask {
   font-size: 24px;
   color: #2994CB;
   z-index: 2; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .school-introduction-title {
       font-size: 28px; } }
 
 .school-introduction-box {
   margin-bottom: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .school-introduction-box {
       margin-bottom: 60px; } }
 
@@ -5507,7 +5508,7 @@ main#primary-ephrases section#ask {
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.45); }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .school-introduction-img {
       height: 500px;
       padding: 60px 0; } }
@@ -5515,14 +5516,14 @@ main#primary-ephrases section#ask {
     margin: 0 auto;
     position: relative;
     z-index: 2; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .school-introduction-img .school-introduction-inbox {
         width: 70%; } }
     .school-introduction-img .school-introduction-inbox img {
       display: block;
       width: 120px;
       margin: 0 auto; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .school-introduction-img .school-introduction-inbox img {
           width: 180px; } }
     .school-introduction-img .school-introduction-inbox .school-introduction-subtitle1 {
@@ -5531,7 +5532,7 @@ main#primary-ephrases section#ask {
       color: #ffffff;
       position: relative;
       z-index: 2; }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         .school-introduction-img .school-introduction-inbox .school-introduction-subtitle1 {
           text-align: center;
           font-size: 40px; } }
@@ -5548,7 +5549,7 @@ main#primary-ephrases section#ask {
   background-color: #ffffff;
   position: relative;
   z-index: 2; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .school-introduction-text {
       width: 70%;
       max-width: 1100px;
@@ -5563,7 +5564,7 @@ main#primary-ephrases section#ask {
     border: 1px solid #2994CB;
     background-color: #ffffff;
     color: #2994CB; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .school-introduction-text span {
         font-size: 21px; } }
 
@@ -5596,14 +5597,14 @@ main#primary-ephrases section#ask {
   justify-content: space-ground;
   margin: 0 auto;
   margin: 30px auto; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .ay-stuff {
-      width: 90%;
+      width: 100%;
       margin: 60px auto; } }
 
 .ay-stuff-img {
   width: 100%; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .ay-stuff-img {
       width: 160px; } }
   .ay-stuff-img img {
@@ -5614,7 +5615,7 @@ main#primary-ephrases section#ask {
     border: 1px solid #2994CB;
     border-radius: 50%;
     float: left; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .ay-stuff-img img {
         display: block;
         width: 120px;
@@ -5625,7 +5626,7 @@ main#primary-ephrases section#ask {
     font-size: 16px;
     margin-left: 10px;
     float: left; }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       .ay-stuff-img p {
         font-size: 18px; } }
 
@@ -5641,7 +5642,7 @@ main#primary-ephrases section#ask {
   border-radius: 10px;
   background-color: rgba(242, 242, 234, 0.8);
   color: #333333; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .balloon {
       width: 70%;
       vertical-align: text-bottom;
@@ -5652,7 +5653,7 @@ main#primary-ephrases section#ask {
 
 .balloon:before {
   display: none; }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     .balloon:before {
       position: absolute;
       top: 25%;

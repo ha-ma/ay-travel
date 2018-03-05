@@ -1,7 +1,3 @@
-$pc:'min-width: 768px';
-
-//ボタン基本デザイン
-
 //ボタン基本デザイン
 .btn1{
   display: table;
@@ -16,7 +12,7 @@ $pc:'min-width: 768px';
     opacity: 0.8;
     text-decoration: none;
   }
-  @media($pc){
+  @media(min-width: 1024px){
     margin: 30px 0 0;
     padding: 5px 30px;
   }
@@ -42,7 +38,7 @@ $pc:'min-width: 768px';
     left: 0;
     z-index: 1;
   }
-  @media($pc){
+  @media(min-width: 1024px){
     height: 400px !important;
   }
   .hero-solostudy-text{
@@ -55,7 +51,7 @@ $pc:'min-width: 768px';
     width: 100%;
     text-align: center;
     z-index: 2;
-    @media($pc){
+    @media(min-width: 1024px){
       top: 25%;
       right: 0;
       left: 0;
@@ -74,7 +70,7 @@ $pc:'min-width: 768px';
   min-height: 650px !important;
   margin-top: 0 !important;
   padding: 50px 0;
-  @media($pc){
+  @media(min-width: 1024px){
     min-height: 850px !important;
     padding: 80px 0;
   }
@@ -86,14 +82,14 @@ $pc:'min-width: 768px';
       width: 100%;
       padding: 20px 0;
       background-color: $primary;
-      @media($pc){
+      @media(min-width: 1024px){
         padding: 40px 0;
       }
       img{
         display: block;
         width: 80%;
         margin: 0 auto;
-        @media($pc) {
+        @media(min-width: 1024px) {
           width: 40%;
         }
       }
@@ -104,14 +100,14 @@ $pc:'min-width: 768px';
       margin: 0 auto;
       padding: 20px;
       background-color: $white;
-      @media($pc){
+      @media(min-width: 1024px){
         @include flex(space-around);
         line-height: 3em;
         padding: 40px;
       }
       li{
         font-size: 16px;
-        @media($pc) {
+        @media(min-width: 1024px) {
           width: 45% !important;
         }
         img{
@@ -124,14 +120,14 @@ $pc:'min-width: 768px';
           width: 100%;
         }
         &:last-child{
-          width: 85%;
-          @media($pc){
+          width: 100%;
+          @media(min-width: 1024px){
             font-size: 18px;
           }
           .study-abroad-subtext{
             line-height: 1.2em;
-            font-size: 21px;
-            @media($pc) {
+            font-size: 18px;
+            @media(min-width: 1024px) {
               line-height: 1.5em;
               font-size: 24px;
             }
@@ -145,7 +141,7 @@ $pc:'min-width: 768px';
             border-right: none;
             border-left: none;
             color: $primary;
-            @media($pc){
+            @media(min-width: 1024px){
               width: 30%;
             }
           }
@@ -163,12 +159,12 @@ $pc:'min-width: 768px';
   margin-top: 0 !important;
   padding: 50px 0;
   background-color: $primary;
-  @media($pc){
+  @media(min-width: 1024px){
     padding: 100px 0;
   }
 }
 .nations-box{
-  @media($pc){
+  @media(min-width: 1024px){
     @include flex(space-around);
     width: 90%;
     margin: 0 auto;
@@ -184,7 +180,7 @@ $pc:'min-width: 768px';
   margin: 0 auto;
   li{
     margin-bottom: 30px;
-    @media($pc){
+    @media(min-width: 1024px){
       margin: none !important;
     }
   }
@@ -192,7 +188,7 @@ $pc:'min-width: 768px';
     background-size: cover;
     background-position: center;
     width: 40%;
-    @media($pc){
+    @media(min-width: 1024px){
       width: 100%;
       height: 160px;
     }
@@ -204,9 +200,10 @@ $pc:'min-width: 768px';
     div{
       font-size: 16px;
     }
-    @media($pc){
+    @media(min-width: 1024px){
       width: 100%;
       margin-top: -30px;
+      padding-bottom: 40px;
       div{
         width: 80%;
         line-height: 1.5em;
@@ -218,7 +215,7 @@ $pc:'min-width: 768px';
     .nations-subtext{
       margin-top: 0px;
       font-size: 24px;
-      @media($pc){
+      @media(min-width: 1024px){
         text-align: center;
         margin: 0 auto;
         font-size: 28px;
@@ -232,7 +229,7 @@ $pc:'min-width: 768px';
       border-right: none;
       border-left: none;
       color: $primary;
-      @media($pc){
+      @media(min-width: 1024px){
         margin: 20px auto 30px;
       }
     }
@@ -244,7 +241,7 @@ $pc:'min-width: 768px';
   margin: 20px auto 0;
   padding: 5px;
   background-color: $white;
-  @media($pc){
+  @media(min-width: 1024px){
     width: 35%;
   }
   img{
@@ -278,7 +275,7 @@ $pc:'min-width: 768px';
 //find-yourself
 #find-yourself{
   padding: 50px 0;
-  @media($pc){
+  @media(min-width: 1024px){
     padding: 100px 0;
   }
   .find-yourself-backimg{
@@ -289,7 +286,7 @@ $pc:'min-width: 768px';
     width: 100%;
     height: 300px;
     margin: 0 auto;
-    @media($pc){
+    @media(min-width: 1024px){
       width: 80%;
       height: 600px;
     }
@@ -302,7 +299,7 @@ $pc:'min-width: 768px';
       bottom: 0;
       width: 95%;
       margin: auto;
-      @media($pc){
+      @media(min-width: 1024px){
         width: 40%;
       }
     }
@@ -317,7 +314,7 @@ $pc:'min-width: 768px';
 .study-type-title{
   text-align: center;
   font-size: 24px;
-  @media($pc){
+  @media(min-width: 1024px){
     font-size: 28px;
   }
 }
@@ -334,7 +331,7 @@ $pc:'min-width: 768px';
       width: 95%;
       z-index: 0;
       height: 450px;
-      @media ($pc) {
+      @media (min-width: 1024px) {
         width: 50%;
       }
       &.stydy-type-img-langschool {
@@ -358,7 +355,7 @@ $pc:'min-width: 768px';
       font-size: 16px;
       background-color: rgba($lightgray,0.8);
       z-index: 1;
-      @media($pc){
+      @media(min-width: 1024px){
         top: 15%;
         left: 40%;
         width: 700px;
@@ -369,7 +366,7 @@ $pc:'min-width: 768px';
         margin-bottom: 10px;
         font-size: 21px;
         color: $primary;
-        @media($pc){
+        @media(min-width: 1024px){
           font-size: 24px;
         }
       }
@@ -382,7 +379,7 @@ $pc:'min-width: 768px';
       }
     }
     .study-type-text{
-      @media($pc){
+      @media(min-width: 1024px){
         right: 40%;
         left: auto;
         width: 600px;
@@ -394,7 +391,7 @@ $pc:'min-width: 768px';
   padding: 3px 10px;
   background-color: rgba($lightgray,0);
   color: $primary;
-  @media($pc){
+  @media(min-width: 1024px){
     padding: 5px 15px;
   }
 }
@@ -404,7 +401,7 @@ $pc:'min-width: 768px';
 #school-introduction{
   padding: 30px 0;
   background-color: rgba($lightgray,0.8);
-  @media($pc){
+  @media(min-width: 1024px){
     margin-top: 50px;
     padding: 60px 0;
   }
@@ -415,7 +412,7 @@ $pc:'min-width: 768px';
     border-right: none;
     border-left: none;
     color: $primary;
-    @media($pc){
+    @media(min-width: 1024px){
       width: 15%;
     }
   }
@@ -426,13 +423,13 @@ $pc:'min-width: 768px';
   font-size: 24px;
   color: $primary;
   z-index: 2;
-  @media($pc){
+  @media(min-width: 1024px){
     font-size: 28px;
   }
 }
 .school-introduction-box{
   margin-bottom: 30px;
-  @media($pc){
+  @media(min-width: 1024px){
     margin-bottom: 60px;
   }
 }
@@ -456,7 +453,7 @@ $pc:'min-width: 768px';
     left: 0;
     background: rgba(0,0,0,.45);
   }
-  @media($pc){
+  @media(min-width: 1024px){
     height: 500px;
     padding: 60px 0;
   }
@@ -464,14 +461,14 @@ $pc:'min-width: 768px';
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    @media($pc){
+    @media(min-width: 1024px){
       width: 70%;
     }
     img{
       display: block;
       width: 120px;
       margin: 0 auto;
-      @media($pc){
+      @media(min-width: 1024px){
         width: 180px;
       }
     }
@@ -481,7 +478,7 @@ $pc:'min-width: 768px';
       color: $white;
       position: relative;
       z-index: 2;
-      @media($pc){
+      @media(min-width: 1024px){
         text-align: center;
         font-size: 40px;
       }
@@ -501,7 +498,7 @@ $pc:'min-width: 768px';
   background-color: $white;
   position: relative;
   z-index: 2;
-  @media($pc){
+  @media(min-width: 1024px){
     width: 70%;
     max-width: 1100px;
     margin: -150px auto 0;
@@ -516,7 +513,7 @@ $pc:'min-width: 768px';
     border: 1px solid $primary;
     background-color: $white;
     color: $primary;
-    @media($pc){
+    @media(min-width: 1024px){
       font-size: 21px;
     }
   }
@@ -524,14 +521,14 @@ $pc:'min-width: 768px';
 .ay-stuff{
   @include flex(space-ground);
   margin: 30px auto;
-  @media($pc){
-    width: 90%;
+  @media(min-width: 1024px){
+    width: 100%;
     margin: 60px auto;
   }
 }
 .ay-stuff-img{
   width: 100%;
-  @media($pc){
+  @media(min-width: 1024px){
     width: 160px;
   }
   img{
@@ -542,7 +539,7 @@ $pc:'min-width: 768px';
     border: 1px solid $primary;
     border-radius: 50%;
     float: left;
-    @media($pc){
+    @media(min-width: 1024px){
       display: block;
       width: 120px;
       height: 120px;
@@ -554,7 +551,7 @@ $pc:'min-width: 768px';
     font-size: 16px;
     margin-left: 10px;
     float: left;
-    @media($pc){
+    @media(min-width: 1024px){
       font-size: 18px;
     }
   }
@@ -571,7 +568,7 @@ $pc:'min-width: 768px';
   border-radius: 10px;
   background-color: rgba($lightgray,0.8);
   color: $black;
-  @media($pc){
+  @media(min-width: 1024px){
     width: 70%;
     vertical-align: text-bottom;
     font-size: 18px;
@@ -583,7 +580,7 @@ $pc:'min-width: 768px';
 }
 .balloon:before{
   display: none;
-  @media($pc){
+  @media(min-width: 1024px){
     position: absolute;
     top: 25%;
     left: -30px;
